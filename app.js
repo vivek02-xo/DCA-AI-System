@@ -5,6 +5,7 @@ const path = require('path');
 const methodOverride = require('method-override');
 const ejsMate = require('ejs-mate');
 const caseRoutes = require("./routes/caseRoutes");
+const authRoutes = require("./routes/authRoutes");
 
 const MONGO_URL = "mongodb://127.0.0.1:27017/DCA_DB";
 
@@ -26,6 +27,7 @@ app.use(methodOverride('_method'));
 app.use(express.static(path.join(__dirname, '/public')));
 app.engine('ejs', ejsMate);
 app.use("/cases", caseRoutes);
+app.use("/auth", authRoutes);
 
 app.get("/", (req, res) => {
     res.send("Home Page");
