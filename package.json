@@ -1,0 +1,20 @@
+{
+  "name": "dca_ai_system",
+  "version": "1.0.0",
+  "description": "We build a centralized web platform that automatically assigns, tracks, and monitors debt cases. The system uses AI to prioritize cases and predict recovery chances. Dashboards and automation improve accountability and reduce delays.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "ejs-mate": "^4.0.0",
+    "express": "^5.2.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^9.0.2",
+    "node": "^24.12.0"
+  }
+}
